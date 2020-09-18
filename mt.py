@@ -17,6 +17,6 @@ with PyTessBaseAPI(DATA_PATH) as api:
 # write text in the field  
 import keyboard
 
+keyboard.wait('right arrow')
 for word in text.split():
-	keyboard.wait('right arrow')
 	keyboard.write(word + " ")
